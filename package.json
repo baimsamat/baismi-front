@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
+    "build:use-fake-backend": "cross-env USE_FAKE_BACKEND=1 nuxt build",
     "dev": "nuxt dev",
     "dev:use-fake-backend": "cross-env USE_FAKE_BACKEND=1 nuxt dev",
     "generate": "nuxt generate",
