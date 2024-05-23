@@ -12,10 +12,8 @@ services:
       # Монтируем папку с логами на хост машину для более удобного доступа
       - ./logs:/var/log/nginx/
     restart: always
-  my-app:
-    container_name: app-nuxt
+  nuxt:
     build:
       context: .
-      dockerfile: Dockerfile
-    ports:
-      - "3000:3000"
+    expose:
+      - 3000
